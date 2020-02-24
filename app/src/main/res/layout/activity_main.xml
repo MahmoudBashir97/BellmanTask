@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity"
+    android:background="#fff">
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/curvedNav"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:backgroundTint="#00f"
+        app:layout_anchor="@+id/lin_id"
+        app:layout_anchorGravity="bottom"
+        app:menu="@menu/nav_menu"
+        />
+
+    <FrameLayout
+        android:id="@+id/lin_id"
+        android:layout_gravity="bottom|center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:layout_marginBottom="20dp"
+        >
+        <io.github.yavski.fabspeeddial.FabSpeedDial
+            android:id="@+id/fab_speed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center"
+            app:fabGravity="bottom_end"
+            app:fabMenu="@menu/fab_menu"
+            app:miniFabBackgroundTint="@android:color/white"
+            app:miniFabDrawableTint="#fff"
+            app:miniFabTitleTextColor="#000"
+            app:miniFabTitleBackgroundTint="#fff"
+            app:fabDrawable="@drawable/bellman_bottom_icon"
+            />
+
+    </FrameLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+       <RelativeLayout
+           android:layout_width="match_parent"
+           android:layout_height="70dp"
+           android:background="@drawable/big_header">
+           <androidx.appcompat.widget.Toolbar
+               android:layout_width="match_parent"
+               android:layout_height="50dp"/>
+       </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

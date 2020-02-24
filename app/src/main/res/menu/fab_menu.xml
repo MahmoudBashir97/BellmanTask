@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/hot_spots_menu"
+        android:enabled="true"
+        android:icon="@drawable/hotspot_icon"
+        app:showAsAction="ifRoom"
+        android:title="Hotspots"/>
+
+    <item
+        android:id="@+id/events_menu"
+        android:enabled="true"
+        android:icon="@drawable/events_icon"
+        app:showAsAction="ifRoom"
+        android:title="Events"/>
+
+    <item
+        android:id="@+id/attractions_menu"
+        android:enabled="true"
+        android:icon="@drawable/attarctions_icon"
+        app:showAsAction="ifRoom"
+        android:title="Attractions"/>
+
+    <item
+        android:id="@+id/map_menu"
+        android:enabled="true"
+        android:icon="@drawable/small_grey_location_pin"
+        app:showAsAction="ifRoom"
+        android:title="Map"/>
+
+</menu>

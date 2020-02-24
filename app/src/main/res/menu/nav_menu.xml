@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/home"
+        android:enabled="true"
+        android:icon="@drawable/home_grey_bottom_icon"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+
+    <item
+        android:id="@+id/search"
+        android:enabled="true"
+        android:icon="@drawable/search_grey_bottom_icon"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+
+    <item
+        android:id="@+id/achievement"
+        android:enabled="true"
+        android:icon="@drawable/notification_grey_bottom_icon"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+
+    <item
+        android:id="@+id/acc_ount"
+        android:enabled="true"
+        android:icon="@drawable/profile_grey_bottom_icon"
+        app:showAsAction="ifRoom"
+        android:title=""/>
+</menu>
