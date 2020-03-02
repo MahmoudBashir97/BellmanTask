@@ -18,7 +18,7 @@
     <com.mahmoud.bashir.bellman_task.ui.CurvedBottomNavigationView
         android:id="@+id/c"
         android:layout_width="match_parent"
-        android:layout_height="52dp"
+        android:layout_height="55dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintBottom_toBottomOf="parent"
         tools:ignore="MissingConstraints"
@@ -30,16 +30,12 @@
 
       <com.google.android.material.floatingactionbutton.FloatingActionButton
           android:id="@+id/main_fab"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"
-          android:layout_marginBottom="60dp"
+          android:layout_width="50dp"
+          android:layout_height="50dp"
+          android:layout_marginBottom="40dp"
           android:src="@drawable/bellman_bottom_icon"
-          app:backgroundTint="#FFFFC107"
-          app:tint="#FFFFFF"
-          app:layout_constraintBottom_toTopOf="@+id/c"
           app:layout_constraintEnd_toEndOf="parent"
           app:layout_constraintStart_toStartOf="parent"
-          app:layout_constraintTop_toTopOf="@+id/c"
           />
 
       <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -47,11 +43,10 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:src="@drawable/hotspot_icon"
-          app:backgroundTint="#FF8D8D8C"
+          app:backgroundTint="#FFFFFF"
           app:layout_constraintCircle="@+id/main_fab"
           app:layout_constraintCircleAngle="305"
           app:layout_constraintCircleRadius="100dp"
-          app:tint="#FFFFFF"
           />
 
       <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -59,11 +54,10 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:src="@drawable/events_icon"
-          app:backgroundTint="#FF8D8D8C"
+          app:backgroundTint="#FFFFFF"
           app:layout_constraintCircle="@+id/main_fab"
           app:layout_constraintCircleAngle="0"
           app:layout_constraintCircleRadius="100dp"
-          app:tint="#FFFFFF"
           />
 
       <com.google.android.material.floatingactionbutton.FloatingActionButton
@@ -71,11 +65,10 @@
           android:layout_width="wrap_content"
           android:layout_height="wrap_content"
           android:src="@drawable/attarctions_icon"
-          app:backgroundTint="#FF8D8D8C"
+          app:backgroundTint="#FFFFFF"
           app:layout_constraintCircle="@+id/main_fab"
           app:layout_constraintCircleAngle="55"
           app:layout_constraintCircleRadius="100dp"
-          app:tint="#FFFFFF"
           />
 
 </androidx.constraintlayout.motion.widget.MotionLayout>
