@@ -2,6 +2,7 @@ package com.mahmoud.bashir.bellman_task.ui;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.constraintlayout.widget.ConstraintSet;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
@@ -47,6 +48,8 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
     private BottomNavigationView mainnav;
     FrameLayout mainframe;
 
+    View first_fab;
+
     RecyclerView recyclerView;
     ApiInterface apiInterface;
 
@@ -60,6 +63,13 @@ public class MainActivity extends AppCompatActivity implements BottomNavigationV
         mainframe=(FrameLayout) findViewById(R.id.frame);
         CurvedBottomNavigationView c=findViewById(R.id.c);
         c.getMaxItemCount();
+
+        first_fab=findViewById(R.id.first_fab);
+        first_fab.setOnClickListener(v->{
+            Toast.makeText(this, "ffffffff", Toast.LENGTH_SHORT).show();
+                }
+        );
+
 
         c.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
